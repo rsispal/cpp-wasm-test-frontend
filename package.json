@@ -1,0 +1,36 @@
+{
+  "name": "cpp-wasm-test-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "wasm:copy": "rm -rf public/node_modules/ && mkdir -p public/node_modules/ && cp -R node_modules/@rsispal public/node_modules/@rsispal",
+    "dev": "npm run wasm:copy && next dev",
+    "build": "npm run wasm:copy && next build",
+    "start": "npm run wasm:copy && next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.1.0",
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@rsispal/cpp-wasm-test": "^1.2.0",
+    "@types/node": "20.2.1",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "@types/w3c-web-serial": "^1.0.3",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.3",
+    "framer-motion": "^10.18.0",
+    "next": "^14.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "typescript": "5.0.4",
+    "ua-parser-js": "^1.0.38"
+  },
+  "devDependencies": {
+    "@types/ua-parser-js": "^0.7.39"
+  }
+}
